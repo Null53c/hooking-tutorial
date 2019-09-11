@@ -30,6 +30,7 @@ Hooking allows you to intercept precise branches of execution and redirect them 
 * Jump Hooking ( Jump hooking allows you to hook code in places where there is no branch-ing code to manipulate. A jump hook replaces the code being hooked with an unconditional jump to a trampoline function ).
 
 
+***
 
 Byte patching in the .text section is the easiest and most common way to place a hook.
 Hooking libraries like Microsoft Detours (Download) are used alot.<br>
@@ -38,6 +39,7 @@ There are various ways to redirect the code flow. You can place a normal JMP ins
 
 You can place a CALL instruction which works same as a JMP but pushes the returnaddress on the stack before jumping. You can also just push the address on the stack and then call RETN which jumps to the last adddress on stack and therefore behaves like a JMP.
 
+***
 
 ### IAT / EAT Hooking
 This hooking method is based on how the PE files are working on windows.
