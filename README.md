@@ -2,7 +2,7 @@
 ---The different ways of hooking (MASM sythax)---<br>
 
 
-Hooking means basically that u interrupt a function call and redirect it to your function.  
+Hooking means basically that you interrupt a function call and redirect it to your function.  
 Lets make a small example:  
 A Game has a function called ReduceHP();  
 and it looks something like this  
